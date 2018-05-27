@@ -38,4 +38,11 @@ for table in ret1:
     item['img'] = table.xpath(".//a[@class='nbg']/img/@src")[0]
     item['comment_num'] = table.xpath(".//span[@class='pl']/text()")[0]
     item['rating_num'] = table.xpath(".//span[@class='rating_nums']/text()")[0]
-    print(item)
+    # print(item);
+    strsss = str(item)
+    print(type(strsss))
+    print(strsss)
+    with open("豆瓣排行榜.json", "a", encoding="utf-8") as f:
+            f.write(strsss)
+            f.write("\n")
+    print("保存成功")
