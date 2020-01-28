@@ -42,7 +42,7 @@ for table in ret1:
     strsss = str(item)
     print(type(strsss))
     print(strsss)
-    with open("豆瓣排行榜.json", "a", encoding="utf-8") as f:
+    with open("豆瓣排行榜2.json", "a", encoding="utf-8") as f:
             f.write(strsss)
             f.write("\n")
     print("保存成功")

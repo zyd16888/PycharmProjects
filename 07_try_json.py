@@ -15,5 +15,5 @@ print(json_str)
 ret1 = json.loads(json_str)
 
 
-with open("shuju.txt","w",encoding="utf-8")as f:
+with open("shuju01.txt","w",encoding="utf-8")as f:
     f.write(json.dumps(ret1, ensure_ascii=False,indent=2))

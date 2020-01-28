@@ -14,7 +14,7 @@ class DoubanSpider:
         return  content_list,total
 
     def save_content_list(self,content_list):
-        with open("豆瓣_国产电视剧.json","a",encoding="utf-8") as f:
+        with open("豆瓣_国产电视剧2.json","a",encoding="utf-8") as f:
             for content in content_list:
                 f.write(json.dumps(content,ensure_ascii=False))
                 f.write("\n")
